@@ -9,6 +9,8 @@ export class SideNavComponent implements OnInit {
 
   constructor() { }
 
+  public isCollapsed = false;
+
   ngOnInit() {
   }
 
