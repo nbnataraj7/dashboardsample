@@ -1,0 +1,26 @@
+<nav class="sidebar">
+    <ul class="nav flex-column">
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false">
+                Devices
+            </a>
+            <ul class="nav flex-column dropdown-menu collapse">
+                <li class="nav-item">
+                    <a [routerLink]="[ '/devices' ]" class="nav-link">Registered devices</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="[ '/devices' ]" class="nav-link">Configure wizard</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="[ '/profiles' ]" class="nav-link">Profiles</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="[ '/themes' ]" class="nav-link">Themes</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="[ '/apps' ]" class="nav-link">Apps</a>
+        </li>
+    </ul>
+</nav>
