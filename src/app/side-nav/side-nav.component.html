@@ -2,9 +2,11 @@
     <div class="sidebar-content">
         <ul class="nav flex-column">
             <li class="nav-item dropdown">
-                <a class="nav-link" [routerLink]="[ '' ]" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                <a class="nav-link" [routerLink]="[ '' ]" (click)="menuToggle()" [attr.aria-expanded]="!isCollapsed"
                     aria-controls="devicesMenu">Devices</a>
-                <ul class="nav flex-column collapse" id="devicesMenu" [ngbCollapse]="isCollapsed">
+                <ul class="nav flex-column" id="devicesMenu"
+                 [ngbCollapse]="isCollapsed"
+                 [@expandMenuItems] = 'menuState'>
                     <li class="nav-item">
                         <a [routerLink]="[ '/devices' ]" class="nav-link">Registered devices</a>
                     </li>
